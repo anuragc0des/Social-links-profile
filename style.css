@@ -96,15 +96,3 @@ body {
   background: var(--reen);
   color: var(--off-Black);
 }
-
-@media (min-width: 1024px) {
-  .content {
-    width: auto;
-    flex-direction: row;
-    gap: 30px;
-  }
-
-  .links {
-    width: 200px;
-  }
-}
