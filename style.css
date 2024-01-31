@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --reen: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-Grey: hsl(0, 0%, 12%);
+  --off-Black: hsl(0, 0%, 8%);
+  --font: 14px;
+  --font-family: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--off-Black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.content {
+  width: 360px;
+  background: var(--dark-Grey);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 16px;
+}
+
+.content .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.profile img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.profile .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.texts h3 {
+  color: var(--white);
+}
+
+.texts span {
+  color: var(--reen);
+  font-weight: 600;
+}
+
+.profile p {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.content .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.links a {
+  background-color: var(--grey);
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.links a:hover {
+  cursor: pointer;
+  background: var(--reen);
+  color: var(--off-Black);
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: auto;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .links {
+    width: 200px;
+  }
+}
